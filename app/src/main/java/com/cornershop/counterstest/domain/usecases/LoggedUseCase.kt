@@ -7,5 +7,5 @@ import javax.inject.Inject
 
 class LoggedUseCase @Inject constructor(private val repository: LoggedRepository) {
     suspend fun setLoggedState(logged: Boolean) = repository.saveUserLoggedInState(logged)
-    suspend fun getLoggedState(): Flow<Boolean> = repository.getUserLoggedInState()
+    fun getLoggedState(): Flow<Boolean> = repository.getUserLoggedInState()
 }
