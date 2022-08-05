@@ -81,6 +81,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-paging:2.4.2"
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
 
     //Dependency Injection - Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"

@@ -122,13 +122,11 @@ class MainViewModel @Inject constructor(
         }
     }
 
-
-    sealed class UIState() {
+    sealed class UIState {
         object NoContent : UIState()
         object NoConnection : UIState()
         object Loading : UIState()
         data class NoConnectionDialog(val counter: String, val amount: Int) : UIState()
-        data class Search(val counters: List<Counter>) : UIState()
         data class HasContent(val counters: List<Counter>, val times: Int) : UIState()
     }
 }

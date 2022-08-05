@@ -25,7 +25,6 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentWelcomeBinding.inflate(inflater, container, false)
-
         return binding.root
     }
 
